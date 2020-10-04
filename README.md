@@ -30,7 +30,7 @@ $yarn start
 
 ```bash
 # Entre na pasta
-$ cd server
+$ cd web
 # Start the client
 $ yarn web start
 ```
