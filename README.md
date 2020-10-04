@@ -32,5 +32,5 @@ $yarn start
 # Entre na pasta
 $ cd web
 # Start the client
-$ yarn web start
+$ yarn start
 ```
