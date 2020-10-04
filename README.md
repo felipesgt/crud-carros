@@ -1,18 +1,19 @@
 <h1 align="center">
     Crud
 </h1>
-<h2 align="center>Um crud feito com servidor feito em Node.js e a interface em React.js</h2>
+
+### Descrição
+Um crud feito em Node.js e com front em React.js
 
 
-
-
+### Executando
 1. Clone o projeto com o Git.
 
 ```bash
 $ git clone https://github.com/felipesgt/crud-carros.git
 ```
 
-2. Rodando o aplicativo:
+2. Executando o Crud:
 ### Server
 
 ```bash
