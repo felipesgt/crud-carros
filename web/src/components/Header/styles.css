@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b5998;
+}
+
+.page-header .header-content {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin: 3.3rem auto;
+}
+
+.page-header .header-content strong {
+  font: 700 4.0rem Arial;
+  line-height: 3.2rem;
+  color: #FFF;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
