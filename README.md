@@ -1,7 +1,7 @@
 <h1 align="center">
     Crud
 </h1>
-
+Um crud feito com servidor feito em Node.js e a interface em React.js
 
 
 1. Clone o projeto com o Git.
