@@ -1,21 +1,12 @@
-#lista-carros {
-  border-radius: 0.8rem;
-  margin-top: 2.4rem;
-  margin-left: 1rem;
-  overflow: hidden;
-  display: inline-block;
-  justify-content: center;
-
+.lista-carros img {
+  width:  250px;
+  height: 300px;
+}
+.lista-carros > div {
+  margin: auto 0;
 }
 
-
-#lista-carros header img {
-  width: 15rem;
-  height: 15rem;
-}
-
-#lista-carros header strong {
-  font: 700 2.4rem Archivo;
-  display: flex;
-  justify-content: center;
+.NavLink {
+  text-decoration: none;
+  color: darkgoldenrod;
 }

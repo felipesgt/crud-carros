@@ -3,11 +3,13 @@ import { useLocation, useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import api from '../../services/api';
 import CarTable from '../../components/CarTable';
-import './styles.css'
+import './styles.css';
+
 const Comprar = () => {
   const [cars, setCars] = useState([]);
   const history = useHistory();
   const location = useLocation();
+
   useEffect(() => {
     api.get('get').then((response) => {
       setCars(response.data);
@@ -15,10 +17,9 @@ const Comprar = () => {
   }, []);
 
   async function handleBuy() {
-    await api.delete(`${location.state}`).then(
-      history.push('/'),
-      alert('Parabéns! Carro comprado com sucesso.'),
-    );
+    await api
+      .delete(`${location.state}`)
+      .then(history.push('/'), alert('Parabéns! Carro comprado com sucesso.'));
   }
 
   return (
@@ -31,8 +32,9 @@ const Comprar = () => {
         return true;
       })}
       <div id="botao">
-      <button onClick={handleBuy}>Comprar Carro</button>
-
+        <button type="button" onClick={handleBuy}>
+          Comprar Carro
+        </button>
       </div>
     </div>
   );

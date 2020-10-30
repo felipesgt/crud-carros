@@ -1,20 +1,23 @@
 import React from 'react';
 import './styles.css';
-import { Link } from 'react-router-dom';
-const CarItem = ({carros}) => {
-    return(
-      <article id="lista-carros">
-      <header>
-       <img src={carros.foto} alt={carros.nome} />
-        <div>
-          <Link to={{
-            pathname: "/comprar",
-            state: carros.nome}}>
+import { NavLink } from 'react-router-dom';
+
+const CarItem = ({ carros }) => {
+  return (
+    <div className="lista-carros">
+      <img src={carros.foto} alt={carros.nome} />
+      <div>
+        <NavLink
+          className="NavLink"
+          to={{
+            pathname: '/comprar',
+            state: carros.nome,
+          }}
+        >
           <strong>{carros.nome}</strong>
-          </Link>
-        </div>
-      </header>
-    </article>
-    );
-}
+        </NavLink>
+      </div>
+    </div>
+  );
+};
 export default CarItem;
